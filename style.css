@@ -9,49 +9,103 @@
   --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
   --Dark-grayish-blue: hsl(227, 10%, 46%);
   --Dark-gray: hsl(0, 0%, 59%);
-  --ff-Kumbh: "Kumbh", "Sans serif";
+  --ff-kumbh: "kumbh", sans-serif;
 }
 body {
-  font-family: var(--ff-Kumbh);
-}
-main {
-  width: 25rem;
+  /* background-image: url(assets/bg-pattern-bottom.svg);
+  background-image: url(assets/bg-pattern-top.svg); */
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 50%;
+  background-color: var(--Dark-cyan);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: var(--ff-kumbh);
 }
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  border-radius: 1rem;
+  width: 30rem;
+  /* border: black 1px solid; */
+}
+#bgr-top-img {
+  position: relative;
+}
+#bgr-bottom-img {
+  position: absolute;
+}
+#parent{
+  position: relative;
+}
+
 #card-bgr {
-  width: 25rem;
+  width: 30rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
+
 #vc-div {
+  position: absolute;
+  left: 11.5rem;
+  top: 8rem;
   display: flex;
   justify-content: center;
+  margin-bottom: 3rem;
+}
+#victor-crest {
+  border-radius: 3rem;
+  border: 6px solid white;
 }
 .section-1-text {
-  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 3rem 0 1rem 0;
+}
+#span-in-text {
+  margin: 0 0.5rem 0 0.5rem;
+  font-size: 20px;
 }
 #p-1 {
-
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem;
 }
 #p-1 span {
-  font-size: 16px;
+  font-weight: 500;
 }
 #p-2 {
   display: flex;
   justify-content: center;
 }
 .section-2-num {
+  font-weight: 700;
   display: flex;
+  justify-content: center;
   flex-direction: row;
+  margin: 1rem 0 0.5rem 0;
 }
 .section-2-num p {
+  font-size: 20px;
+  font-family: var(--ff-kumbh);
   margin: 0 1rem 0 1rem;
 }
 .section-2-text {
   display: flex;
+  justify-content: center;
   flex-direction: row;
+  margin-bottom: 1rem;
 }
 .section-2-text p {
   margin: 0 1rem 0 1rem;
+  display: flex;
+  flex-direction: row;
 }
